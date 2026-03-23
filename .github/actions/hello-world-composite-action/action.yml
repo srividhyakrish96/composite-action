@@ -29,6 +29,9 @@ runs:
       env:
         GITHUB_ACTION_PATH: ${{ github.action_path }}
 
+    - name: Giving permission to script
+      run:  chmod +x goodbye.sh
+      
     - name: Run goodbye.sh
       run: goodbye.sh
       shell: bash
