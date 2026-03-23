@@ -34,7 +34,7 @@ runs:
       run: pwd
       shell: bash
     - name: Giving permission to script
-      run: chmod +x goodbye.sh
+      run: chmod +x .github/actions/hello-world-composite-action/goodbye.sh
       shell: bash
     - name: Run goodbye.sh
       run: goodbye.sh
