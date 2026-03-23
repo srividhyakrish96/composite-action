@@ -37,5 +37,5 @@ runs:
       run: chmod +x .github/actions/hello-world-composite-action/goodbye.sh
       shell: bash
     - name: Run goodbye.sh
-      run: goodbye.sh
+      run: sh -x .github/actions/hello-world-composite-action/goodbye.sh
       shell: bash
