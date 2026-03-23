@@ -27,15 +27,6 @@ runs:
       shell: bash
       env:
         GITHUB_ACTION_PATH: ${{ github.action_path }}
-    - name: To list the file
-      run: ls -lrt
-      shell: bash
-    - name: To check file path
-      run: pwd
-      shell: bash
-    - name: Giving permission to script
-      run: chmod +x .github/actions/hello-world-composite-action/goodbye.sh
-      shell: bash
     - name: Run goodbye.sh
-      run: sh -x .github/actions/hello-world-composite-action/goodbye.sh
+      run:  goodbye.sh
       shell: bash
