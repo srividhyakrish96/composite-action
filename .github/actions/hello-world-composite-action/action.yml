@@ -27,6 +27,12 @@ runs:
       shell: bash
       env:
         GITHUB_ACTION_PATH: ${{ github.action_path }}
+    - name: To list the file
+      run: ls -lrt
+      shell: bash
+    - name: To check file path
+      run: pwd
+      shell: bash
     - name: Giving permission to script
       run: chmod +x goodbye.sh
       shell: bash
